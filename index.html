@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Красов Ярослав — Python / Java / Web</title>
+<meta name="description" content="Портфолио разработчика: Python, Java, веб-приложения, Telegram Mini Apps, REST API.">
+<style>
+  :root{
+    --bg:#0d1117;
+    --panel:#161b22;
+    --border:#232b36;
+    --text:#e6edf3;
+    --muted:#8b949e;
+    --accent:#7c5cff;
+    --accent2:#2ea043;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+
+  header{padding:72px 0 48px;position:relative;overflow:hidden}
+  header::before{
+    content:"";position:absolute;top:-220px;left:50%;transform:translateX(-50%);
+    width:700px;height:420px;
+    background:radial-gradient(circle,rgba(124,92,255,.35),transparent 65%);
+    filter:blur(20px);pointer-events:none;
+  }
+  .status{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:13px;color:var(--muted);
+    border:1px solid var(--border);border-radius:999px;
+    padding:5px 14px;margin-bottom:22px;background:rgba(22,27,34,.7);
+  }
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--accent2);box-shadow:0 0 8px var(--accent2)}
+  h1{font-size:clamp(30px,5vw,46px);line-height:1.15;letter-spacing:-.02em;font-weight:700}
+  .role{font-size:clamp(16px,2.4vw,20px);color:var(--muted);margin-top:12px;max-width:640px}
+  .contacts{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+  .contacts a{
+    display:inline-flex;align-items:center;gap:8px;
+    border:1px solid var(--border);border-radius:10px;
+    padding:10px 16px;font-size:14px;color:var(--text);
+    background:var(--panel);transition:.2s;
+  }
+  .contacts a:hover{border-color:var(--accent);text-decoration:none;transform:translateY(-1px)}
+  .contacts a.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+
+  section{padding:44px 0;border-top:1px solid var(--border)}
+  h2{font-size:14px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:600;margin-bottom:24px}
+
+  .grid{display:grid;gap:16px}
+  .cols-2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+  .cols-3{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+
+  .card{
+    background:var(--panel);border:1px solid var(--border);border-radius:14px;
+    padding:22px;transition:.2s;
+  }
+  .card:hover{border-color:#303a47;transform:translateY(-2px)}
+  .card h3{font-size:17px;margin-bottom:8px;font-weight:600}
+  .card p{color:var(--muted);font-size:14px}
+  .card ul{margin:12px 0 0 18px;color:var(--muted);font-size:14px}
+  .card li{margin-bottom:5px}
+  .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+  .tag{
+    font-size:12px;padding:3px 10px;border-radius:999px;
+    background:rgba(124,92,255,.12);color:#b9a9ff;border:1px solid rgba(124,92,255,.25);
+  }
+
+  .skill{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:18px 20px}
+  .skill h3{font-size:14px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px}
+  .skill p{font-size:14px}
+
+  .note{
+    background:rgba(46,160,67,.08);border:1px solid rgba(46,160,67,.3);
+    border-radius:14px;padding:18px 22px;font-size:14px;color:#a8d5b5;
+  }
+
+  footer{padding:36px 0 56px;color:var(--muted);font-size:13px;border-top:1px solid var(--border)}
+
+  @media (max-width:600px){
+    header{padding:48px 0 32px}
+    section{padding:34px 0}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="status"><span class="dot"></span> Открыт к проектам и предложениям</div>
+    <h1>Красов Ярослав Евгеньевич</h1>
+    <p class="role">
+      Разработчик на Python и Java, веб-приложения под ключ: от REST API и базы данных
+      до адаптивного интерфейса и деплоя.
+    </p>
+    <div class="contacts">
+      <a class="primary" href="https://t.me/rayzar23">Telegram @rayzar23</a>
+      <a href="https://github.com/RayZar23">GitHub</a>
+      <a href="mailto:krasoyaroslav2010@gmail.com">Написать на почту</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Стек</h2>
+    <div class="grid cols-3">
+      <div class="skill">
+        <h3>Backend</h3>
+        <p>Python, Java, Node.js, Express, REST API, авторизация и роли, валидация, rate limiting, обработка ошибок</p>
+      </div>
+      <div class="skill">
+        <h3>Frontend</h3>
+        <p>JavaScript, Vue, React, HTML5, CSS3, адаптивная и семантическая вёрстка, работа с API через fetch/axios</p>
+      </div>
+      <div class="skill">
+        <h3>Инструменты</h3>
+        <p>Git, Docker, Linux/VPS, Netlify, Vercel, Telegram Bot API, интеграция платёжных и блокчейн-сервисов</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Проекты</h2>
+    <div class="grid cols-2">
+
+      <div class="card">
+        <h3>TON NFT Market — Telegram Mini App</h3>
+        <p>
+          Маркетплейс NFT-подарков и аукцион внутри Telegram: кошелёк, торги, витрина,
+          выпуск NFT, настройки профиля. Полный цикл — от схемы данных до интерфейса.
+        </p>
+        <ul>
+          <li>Backend на Express: контроллеры аукционов, NFT, авторизации, розыгрышей</li>
+          <li>Модели данных и middleware: JWT-авторизация, лимиты запросов, единый обработчик ошибок</li>
+          <li>SPA-интерфейс на нативном JS без фреймворков, адаптив под мобильные</li>
+          <li>Деплой: Netlify Functions и Vercel</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">Node.js</span><span class="tag">Express</span>
+          <span class="tag">REST API</span><span class="tag">JavaScript</span>
+          <span class="tag">Telegram SDK</span><span class="tag">TON</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Telegram Mini App — шаблон и HTTPS-сервер</h3>
+        <p>
+          Готовая база для мини-приложений: подключение Telegram WebApp SDK, темы,
+          MainButton, Popup, локальный HTTPS-сервер с самоподписанными сертификатами
+          для отладки на телефоне.
+        </p>
+        <ul>
+          <li>Светлая и тёмная темы, компоненты Telegram UI</li>
+          <li>Node-сервер с генерацией сертификатов и запуском по HTTPS</li>
+          <li>Конфиги для быстрого деплоя на статический хостинг</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">JavaScript</span><span class="tag">Node.js</span>
+          <span class="tag">Telegram WebApp</span><span class="tag">HTTPS</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Лендинги и интерфейсы</h3>
+        <p>
+          Вёрстка по макетам и без: адаптивные страницы, формы с валидацией,
+          интеграция с внешними API, оптимизация под мобильные устройства.
+        </p>
+        <ul>
+          <li>Семантическая и кроссбраузерная вёрстка</li>
+          <li>Адаптив от 360px, работа с изображениями и анимациями</li>
+          <li>Подключение форм к бэкенду и сторонним сервисам</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">HTML5</span><span class="tag">CSS3</span>
+          <span class="tag">Адаптив</span><span class="tag">API</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Автоматизация и скрипты</h3>
+        <p>
+          Python-скрипты для рутинных задач: парсинг открытых источников,
+          обработка данных, выгрузка в Excel и Google Sheets, интеграция с API.
+        </p>
+        <ul>
+          <li>Сбор и нормализация данных из открытых источников</li>
+          <li>Работа с API сервисов, обработка ошибок и повторные запросы</li>
+          <li>Автоматические отчёты по расписанию</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">Python</span><span class="tag">requests</span>
+          <span class="tag">pandas</span><span class="tag">Автоматизация</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Как я работаю</h2>
+    <div class="grid cols-2">
+      <div class="card">
+        <h3>Понятные этапы</h3>
+        <p>
+          Разбиваю задачу на небольшие шаги и показываю результат после каждого —
+          вы видите прогресс, а не ждёте финала вслепую.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Код, который можно поддерживать</h3>
+        <p>
+          Читаемая структура, понятные имена, обработка ошибок. Не оставляю после себя
+          «работает — и ладно».
+        </p>
+      </div>
+      <div class="card">
+        <h3>На связи</h3>
+        <p>
+          Отвечаю в Telegram в течение дня, разбираюсь в задаче до начала работы,
+          задаю вопросы, если ТЗ допускает разные трактовки.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Ответственность за результат</h3>
+        <p>
+          Довожу до рабочего состояния: проверяю на реальных данных,
+          подсказываю, как развернуть и поддерживать.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="note">
+      Открыт к задачам по веб-разработке, автоматизации на Python и бэкенду.
+      Быстрее всего отвечу в Telegram — <a href="https://t.me/rayzar23">@rayzar23</a>.
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Красов Ярослав Евгеньевич · <a href="https://github.com/RayZar23">github.com/RayZar23</a> · 2026
+  </div>
+</footer>
+
+</body>
+</html>
